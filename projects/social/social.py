@@ -45,7 +45,8 @@ class SocialGraph:
         self.users = {}
         self.friendships = {}
         # !!!! IMPLEMENT ME
-
+        if numUsers <= avgFriendships: 
+            print('Warning. You cannot have more friendships than there are users!')
         # Add users
 
         # Create friendships
