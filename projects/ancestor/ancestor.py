@@ -33,5 +33,6 @@ def earliest_ancestor(ancestors, starting_node):
         family[child].append(parent)
     if starting_node not in family:
         return -1
-    ancestor = dfs(starting_node, family)
-    return ancestor
+    earliest_ancestor = dfs(starting_node, family)
+    return earliest_ancestor
+
